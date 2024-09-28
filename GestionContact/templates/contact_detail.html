@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails du Contact</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #555;
+        }
+        .contact-info {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Détails du Contact</h1>
+        <div class="contact-info">
+            <strong>ID :</strong> {{ contact.id }}
+        </div>
+        <div class="contact-info">
+            <strong>Nom :</strong> {{ contact.nom }}
+        </div>
+        <div class="contact-info">
+            <strong>Prénom :</strong> {{ contact.prenom }}
+        </div>
+        <div class="contact-info">
+            <strong>Numéro de téléphone :</strong> {{ contact.telephone }}
+        </div>
+        <a href="{% url 'contacts_list' %}">Retour à la liste des contacts</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation Envoyée</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #555;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Confirmation Envoyée</h1>
+        <p>Nous avons bien reçu votre demande de confirmation. Un email a été envoyé à votre adresse. Veuillez vérifier votre boîte de réception et suivre les instructions pour activer votre compte.</p>
+        <p>Si vous ne voyez pas l'email, vérifiez votre dossier de spam.</p>
+        <a href="{% url 'home' %}">Retour à l'accueil</a>  <!-- Remplace 'home' par le nom de ta vue d'accueil -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - MMessage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="logo">
+                <h1>MMessage</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">À propos</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="/connexion/">Connexion</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Bienvenue à MMessage</h2>
+                <p>Envoyez des SMS en masse, gérez vos contacts, et optimisez vos campagnes.</p>
+                <a href="/gestion_contact/" class="btn secondary">Gérer contact</a>
+            </div>
+        </section>
+
+        <section class="about">
+            <h2>À propos de MMessage</h2>
+            <p>
+                Chez MMessage, nous fournissons une solution complète pour la gestion de vos campagnes SMS. Grâce à notre plateforme intuitive, vous pouvez envoyer des messages en masse, suivre les performances et obtenir des rapports détaillés. Nous vous aidons à atteindre vos clients de manière efficace.
+            </p>
+            <div class="about-content">
+                <p>
+                    Notre mission est de simplifier le processus de communication avec vos clients à travers des outils de messagerie puissants. Profitez d’une plateforme rapide, fiable et facile à utiliser pour optimiser vos campagnes marketing.
+                </p>
+            </div>
+        </section>
+
+        <section class="services">
+            <h2>Nos Services</h2>
+            <a href="/gestion_contact/"></a>
+            <div class="service-cards">
+                <div class="service-card">
+                    <h3>Envoi de SMS en masse</h3>
+                    <p>Envoyez des messages groupés à vos contacts facilement et rapidement.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Gestion des contacts</h3>
+                    <p>Organisez vos contacts et groupes pour un ciblage optimal.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Suivi des performances</h3>
+                    <p>Analysez l'efficacité de vos campagnes avec des rapports détaillés.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 MMessage. Tous droits réservés.</p>
+            <ul>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="#">Politique de confidentialité</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #eef2f7;
+            color: #333;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+        }
+        
+        /* Header */
+        header .top-bar {
+            background-color: #34495e;
+            color: #ecf0f1;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        header .logo h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #f39c12;
+        }
+        
+        header nav ul li a:hover {
+            color: #e74c3c;
+        }
+        
+        /* Hero section */
+        .hero {
+            background-image: url('your-background-image-url.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .hero-content {
+            color: white;
+            background: rgba(0, 0, 0, 0.65);
+            padding: 80px 40px;
+            border-radius: 20px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+        }
+        
+        .hero-content h2 {
+            font-size: 3.5rem;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .hero-content p {
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+        
+        .hero-content .btn {
+            padding: 15px 35px;
+            background-color: #2980b9;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+            margin: 5px;
+            display: inline-block;
+            font-size: 1.2rem;
+        }
+        
+        .hero-content .btn:hover {
+            background-color: #3498db;
+            transform: translateY(-4px);
+        }
+        
+    
+        /* About section */
+        .about {
+            padding: 60px 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            margin: 30px auto;
+            max-width: 1200px;
+            text-align: center;
+        }
+        
+        .about h2 {
+            margin-bottom: 25px;
+            font-size: 2.8rem;
+            color: #34495e;
+            text-transform: uppercase;
+        }
+        
+        .about p {
+            margin-bottom: 35px;
+            font-size: 1.3rem;
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        /* Services section */
+        .services {
+            padding: 60px 20px;
+            background-color: #f7f9fc;
+            text-align: center;
+        }
+        
+        .services h2 {
+            margin-bottom: 40px;
+            font-size: 2.8rem;
+            color: #34495e;
+            text-transform: uppercase;
+        }
+        
+        .service-cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .service-card {
+            background-color: #fff;
+            padding: 25px;
+            width: 30%;
+            min-width: 280px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .service-card h3 {
+            margin: 20px 0;
+            font-size: 1.8rem;
+            color: #e67e22;
+        }
+        
+        .service-card p {
+            font-size: 1.1rem;
+            color: #666;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #34495e;
+            color: #ecf0f1;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        footer .footer-content ul li a:hover {
+            color: #e74c3c;
+        }
+    </style> 
+</body>
+</html>

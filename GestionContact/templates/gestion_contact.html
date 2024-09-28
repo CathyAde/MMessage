@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gérer Contact</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            transition: 0.3s ease;
+            text-align: center;
+        }
+
+        .container:hover {
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #333;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 40px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            background-color: #0072ff;
+            color: #fff;
+            padding: 15px;
+            margin-bottom: 15px;
+            font-size: 18px;
+            font-weight: 500;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #005bb5;
+            transform: translateY(-3px);
+        }
+
+        button:active {
+            transform: translateY(1px);
+        }
+
+        a {
+            text-decoration: none;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Gestion des contacts</h1>
+        <p>Bienvenue sur la page de gestion des contacts.</p>
+        
+        <a href="{% url 'creer_contact' %}">
+            <button>Créer Contact</button>
+        </a>
+
+        <a href="{% url 'modifier_contact' %}">
+            <button>Modifier Contact</button>
+        </a>
+
+        <a href="{% url 'importer_contact' %}">
+            <button>Importer Contact</button>
+        </a>
+
+        <a href="{% url 'supprimer_contact' %}">
+            <button>Supprimer Contact</button>
+        </a>
+
+        <a href="{% url 'contacts_list' %}">
+            <button>Liste Contact</button>
+        </a>
+    </div>
+</body>
+</html>
